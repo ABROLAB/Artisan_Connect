@@ -1,0 +1,254 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear_chatroom"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear_main"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFF"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear22"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:padding="8dp"
+				android:background="@android:color/transparent"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview21"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="ADD ZEN TO CONTACTS"
+					android:textSize="16sp"
+					android:textColor="#009688"
+					android:layout_weight="1" />
+				<ImageView
+					android:id="@+id/imageview12"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/ic_clear_grey"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+			<ListView
+				android:id="@+id/listview1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@android:color/transparent"
+				android:dividerHeight="0dp"
+				android:divider="@null"
+				android:choiceMode="none"
+				android:layout_weight="1" />
+			<LinearLayout
+				android:id="@+id/linear_msg_main"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="bottom"
+				android:orientation="horizontal">
+				<LinearLayout
+					android:id="@+id/linear_message"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="8dp"
+					android:padding="5dp"
+					android:background="#EEEEEE"
+					android:gravity="center_vertical"
+					android:orientation="vertical"
+					android:layout_weight="1">
+					<LinearLayout
+						android:id="@+id/linear_attach"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dp"
+						android:padding="3dp"
+						android:gravity="center_horizontal"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linear23"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:padding="3dp"
+							android:gravity="center_horizontal"
+							android:orientation="vertical"
+							android:layout_weight="1">
+							<ImageView
+								android:id="@+id/imageview14"
+								android:layout_width="45dp"
+								android:layout_height="45dp"
+								android:src="@drawable/aud"
+								android:scaleType="fitCenter" />
+							<TextView
+								android:id="@+id/textview22"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:paddingLeft="12dp"
+								android:paddingTop="8dp"
+								android:paddingRight="12dp"
+								android:paddingBottom="8dp"
+								android:text="Audio"
+								android:textSize="14sp"
+								android:textColor="#616161" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/lin_camera"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:padding="3dp"
+							android:gravity="center_horizontal"
+							android:orientation="vertical"
+							android:layout_weight="1">
+							<ImageView
+								android:id="@+id/imageview8"
+								android:layout_width="45dp"
+								android:layout_height="45dp"
+								android:src="@drawable/attach_gallery"
+								android:scaleType="fitCenter" />
+							<TextView
+								android:id="@+id/textview15"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Image"
+								android:textSize="14sp"
+								android:textColor="#616161" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/lin_gallery"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:padding="3dp"
+							android:gravity="center_horizontal"
+							android:orientation="vertical"
+							android:layout_weight="1">
+							<ImageView
+								android:id="@+id/imageview11"
+								android:layout_width="45dp"
+								android:layout_height="45dp"
+								android:src="@drawable/attach_video"
+								android:scaleType="fitCenter" />
+							<TextView
+								android:id="@+id/textview20"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:paddingTop="8dp"
+								android:paddingBottom="8dp"
+								android:text="  Video  "
+								android:textSize="14sp"
+								android:textColor="#616161" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear_reply"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5dp"
+						android:layout_marginTop="5dp"
+						android:layout_marginRight="5dp"
+						android:padding="2dp"
+						android:background="#EEEEEE"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linear20"
+							android:layout_width="100dp"
+							android:layout_height="wrap_content"
+							android:padding="4dp"
+							android:orientation="vertical"
+							android:layout_weight="1">
+							<TextView
+								android:id="@+id/name_reply_out"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="2dp"
+								android:text="Artisan Connect"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:textColor="#F7991D"
+								android:singleLine="true" />
+							<TextView
+								android:id="@+id/text_reply_out"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="2dp"
+								android:text="Hey, what's up\? "
+								android:textSize="14sp"
+								android:textColor="#263238"
+								android:singleLine="true" />
+						</LinearLayout>
+						<ImageView
+							android:id="@+id/ig_reply_close"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="3dp"
+							android:src="@drawable/ic_clear_grey"
+							android:scaleType="center" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="2dp"
+						android:background="@android:color/transparent"
+						android:gravity="center_horizontal|bottom"
+						android:orientation="horizontal">
+						<EditText
+							android:id="@+id/tx_message"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="@android:color/transparent"
+							android:textSize="16sp"
+							android:textColor="#000000"
+							android:hint="Type a message"
+							android:textColorHint="#607D8B"
+							android:layout_weight="1" />
+						<ImageView
+							android:id="@+id/im_attach_file"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="2dp"
+							android:padding="3dp"
+							android:src="@drawable/ic_attach_file_grey"
+							android:scaleType="center"
+							android:rotation="150" />
+						<ImageView
+							android:id="@+id/im_send_img"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="2dp"
+							android:padding="3dp"
+							android:src="@drawable/ic_camera_alt_grey"
+							android:scaleType="center" />
+					</LinearLayout>
+				</LinearLayout>
+				<ImageView
+					android:id="@+id/im_send"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginRight="8dp"
+					android:layout_marginBottom="8dp"
+					android:background="#F7991D"
+					android:src="@drawable/ic_mic_none_white"
+					android:scaleType="center" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="horizontal" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
